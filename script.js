@@ -9,6 +9,8 @@ if (userInsert <= 50) {
   Array.from(Array(squaresCount)).map((elem) => {
     const divElement = document.createElement("div");
     divElement.classList.add("div-child");
+    divElement.style.width = `calc(100vw / ${userInsert})`
+    divElement.style.height = `calc(100vh / ${userInsert})`
 
     /* 
     below functions could be handeled by css
